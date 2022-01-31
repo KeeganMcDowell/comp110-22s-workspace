@@ -1,6 +1,6 @@
 """EX01 - Chardle - A cute step toward Wordle."""
 
-_author_ = "730234932"
+__author__ = "730234932"
 
 word_choice: str = input("Enter a 5-character word: ")
 
@@ -35,7 +35,7 @@ if character_choice == word_choice[3]:
     instances = instances + 1
      
 if character_choice == word_choice[4]:
-    print(character_choice +" found at index 4")
+    print(character_choice + " found at index 4")
     instances = instances + 1
 
 if instances == 0:
@@ -45,5 +45,3 @@ else:
         print(str(instances) + " instance of " + character_choice + " found in " + word_choice)
     else:
         print(str(instances) + " instances of " + character_choice + " found in " + word_choice)
-
-
